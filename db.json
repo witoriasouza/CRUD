@@ -1,0 +1,82 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "cpf": 185,
+      "nome": "Bonifacio",
+      "idade": 18,
+      "email": "wii@gmail.com",
+      "tel": 11,
+      "curso": "ds",
+      "periodo": "m"
+    },
+    {
+      "nome": "wiii",
+      "idade": 18,
+      "cpf": 222,
+      "email": "wii@gmail.com",
+      "tel": 11,
+      "curso": "ds",
+      "periodo": "m",
+      "id": 3
+    },
+    {
+      "nome": "days",
+      "idade": 66,
+      "cpf": 181,
+      "email": "wii@gmail.com",
+      "tel": 11,
+      "curso": "ds",
+      "periodo": "m",
+      "id": 4
+    },
+    {
+      "nome": "wiitorinha",
+      "idade": "2033-03-23",
+      "cpf": "888",
+      "email": "wii@",
+      "tel": "11999",
+      "id": 5
+    },
+    {
+      "nome": "",
+      "idade": "",
+      "cpf": "",
+      "email": "",
+      "tel": "",
+      "curso": "eletrica",
+      "periodo": "m",
+      "id": 6
+    },
+    {
+      "nome": "oiii",
+      "idade": "2006-03-23",
+      "cpf": "23232",
+      "email": "wiii@wiii",
+      "tel": "1212",
+      "curso": "ds",
+      "periodo": "t",
+      "id": 7
+    },
+    {
+      "nome": "days",
+      "idade": 66,
+      "cpf": 181,
+      "email": "wii@gmail.com",
+      "tel": 11,
+      "curso": "ds",
+      "periodo": "m",
+      "id": 8
+    },
+    {
+      "nome": "etretet",
+      "idade": "",
+      "cpf": "",
+      "email": "",
+      "tel": "",
+      "curso": "eletrica",
+      "periodo": "m",
+      "id": 9
+    }
+  ]
+}

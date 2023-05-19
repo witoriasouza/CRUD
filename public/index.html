@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola xx</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    
+    <main class="formulario">
+        <h1>Cadastre-se para o processo seletivo</h1>
+        <label> <h3>Nome Completo:</h3></label>
+        <input type="text" id="nome" required>
+        <br>
+        <label><h3>Data de Nascimento:</h3></label>
+        <input type="date" id="idade" required>
+        <br>
+        <label><h3>CPF:</h3></label>
+        <input type="number" id="cpfCadastro" required>
+        <br>
+        <label><h3>Email:</h3></label>
+        <input type="email" id="email" required>
+        <br>
+        <label><h3>Telefone para contato:</h3></label>
+        <input type="number" id="tel" required>
+        <br>
+        <label ><h3>Curso:</h3></label>
+            <select name="curso" id="curso" required>
+                <option value="eletrica">Mecatrônica</option>
+                <option value="ds">Desenvolvimento de sistemas</option>
+                <option value="eletrica">Eletroeletrônica</option>
+            </select>
+        <br>
+        <label ><h3>Periodo:</h3></label>
+            <select name="periodo" id="periodo" required>
+                <option value="m">Manhã</option>
+                <option value="t">Tarde</option>
+                <option value="n">noite</option>
+            </select>
+        <br>
+        <label><h3>Nome do responsável (caso seja menor de idade):</h3></label>
+        <input type="text" id="pais">
+        <br>
+        <br>
+        <input type="button" onclick="enviarDados()" value="Enviar" class="botao-cadastro">
+        <br>
+        <br>
+        <button ><a href="get.html">ATUALIZAR CADASTRO</a></button>
+        <br>
+        <br>
+        <button ><a href="indexcadastro.html">VOLTAR PARA PÁGINA DE LOGIN</a></button>
+    </main>
+
+    <script>
+        //POST
+        function enviarDados() {
+            const nome = document.getElementById('nome').value; 
+            const idade = document.getElementById('idade').value; 
+            const cpf = document.getElementById('cpfCadastro').value;
+            const email = document.getElementById('email').value;
+            const tel = document.getElementById('tel').value;
+            const curso = document.getElementById('curso').value;
+            const periodo = document.getElementById('periodo').value;
+
+
+
+            fetch('pessoas', {
+                method: 'POST',
+                headers: {
+                    'Content-Type' : 'application/json'
+                },
+                body: JSON.stringify({nome: nome, idade: idade, cpf: cpf, email: email, tel: tel, curso: curso, periodo:periodo})
+            })
+            .then(response => response.json())
+        }
+    
+    </script>
+
+</body>
+</html>

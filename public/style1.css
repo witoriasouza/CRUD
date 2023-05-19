@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(14, 85, 85);
+}
+
+.formulario {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    width: 420px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+
+.botao-cadastro {
+    background-color: #329432;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.botao-cadastro:hover {
+    background-color: rgb(40, 88, 29);
+    cursor: pointer;
+}
